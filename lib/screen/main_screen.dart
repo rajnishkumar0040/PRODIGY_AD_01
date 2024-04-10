@@ -68,7 +68,7 @@ class _MainScreenState extends State<MainScreen> {
                     maxLines: 1,
                     style: const TextStyle(
                       fontSize: 24.0,
-                      color: Color.fromARGB(180, 255, 255, 255),
+                      color: Colors.black,
                     ),
                   ),
                 ],
@@ -85,19 +85,19 @@ class _MainScreenState extends State<MainScreen> {
                     children: [
                       buttons(
                         text: 'AC',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                       buttons(
                         text: '<',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                       buttons(
                         text: '%',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                       buttons(
                         text: '/',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                     ],
                   ),
@@ -111,7 +111,7 @@ class _MainScreenState extends State<MainScreen> {
                       buttons(text: '9'),
                       buttons(
                         text: 'x',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                     ],
                   ),
@@ -125,7 +125,7 @@ class _MainScreenState extends State<MainScreen> {
                       buttons(text: '6'),
                       buttons(
                         text: '-',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                     ],
                   ),
@@ -139,7 +139,7 @@ class _MainScreenState extends State<MainScreen> {
                       buttons(text: '3'),
                       buttons(
                         text: '+',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                     ],
                   ),
@@ -153,7 +153,7 @@ class _MainScreenState extends State<MainScreen> {
                       buttons(text: '.'),
                       buttons(
                         text: '=',
-                        color: Colors.orange,
+                        color: Colors.red,
                       ),
                     ],
                   ),
@@ -168,7 +168,7 @@ class _MainScreenState extends State<MainScreen> {
 
   Widget buttons({
     text,
-    color = Colors.white,
+    color = Colors.black,
   }) {
     return TextButton(
       onPressed: () {
